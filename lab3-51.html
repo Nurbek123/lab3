@@ -1,0 +1,19 @@
+<script>
+a= Number(prompt("A Sanin engiz"," "));
+b= Number(prompt("N dareje engiz"," "));
+
+function exp(a,b) {
+  b = Math.round(b);
+  if (b == 0) {
+    return 1;
+  }
+  if (b < 0) {
+    return 1 / exp(a,b);
+  }
+  if (b > 0) {
+    return a * exp(a, b - 1)
+  }
+}
+document.write(exp(a,b));
+
+</script>
