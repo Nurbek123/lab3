@@ -1,10 +1,10 @@
 <script>
-var a= prompt("A Sanin engiz"," ");
-var b= prompt("N dareje engiz"," ");
+var a= prompt("A type engiz"," ");
+
 
 function Function(functionToCheck) {
 var getType = {};
 return functionToCheck && getType.toString.call(functionToCheck) ==='[object Function]';
 }
-document.write(Function())
+document.write(Function(a))
 </script>
